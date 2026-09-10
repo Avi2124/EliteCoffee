@@ -933,13 +933,14 @@ h1 {
 }
 .newsletter__button {
   flex-shrink: 0;
-  padding: 0.65rem 1.1rem;
+  padding: 0.61rem 2.3rem;
   align-items: center;
   gap: 0.4rem;
   border-radius: 50px;
   background: #a67c52;
   color: #ffffff;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
+  margin-left: -133px;
   font-weight: 700;
   border: none;
   cursor: pointer;
@@ -947,7 +948,6 @@ h1 {
 }
 .newsletter__button:hover {
   background: #4b3023;
-  transform: translateY(-2px);
 }
 .newsletter__button i {
   font-size: 0.55rem;
