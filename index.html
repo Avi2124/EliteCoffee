@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EliteCoffee - Home</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="./images/fevicon.png" type="image/png" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container navbar__container">
+        <a href="#" class="navbar__logo"
+          ><img src="./images/logo1.png" alt="Elite Coffee"
+        /></a>
+
+        <nav class="navbar__menu">
+          <a href="#" class="navbar__link active">Home</a>
+          <a href="#categories" class="navbar__link">Menu</a>
+          <a href="#about" class="navbar__link">About</a>
+          <a href="#galary" class="navbar__link">Galary</a>
+          <a href="#contact" class="navbar__link">Contact</a>
+        </nav>
+        <div class="navbar__actions">
+          <button class="navbar__icon navbar__search" aria-label="Search">
+            <i class="fa fa-search"></i>
+          </button>
+          <button class="navbar__icon navbar__cart" aria-label="Cart">
+            <i class="fa fa-shopping-cart"></i><span>0</span>
+          </button>
+          <a href="#order" class="navbar__button">Order Now</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <p class="hero__subtitle">GOOD COFFEE, BETTER MOOD</p>
+
+          <h1 class="hero__title">
+            The Perfect Cup<br />For <span>Every Moment</span>
+          </h1>
+
+          <p class="hero__description">
+            At Elite Coffee, we bring you the finest coffee, crafted with
+            passion and served with love. Experience the perfect blend of taste,
+            quality and comfort.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#categories" class="button button--primary"
+              >Explore Menu<i class="fa fa-arrow-right"></i
+            ></a>
+            <a href="#about" class="button button--secondary"> Learn More </a>
+          </div>
+
+          <div class="hero__features">
+            <div class="hero__feature">
+              <i class="fa fa-leaf"></i><span>Premium Beans</span>
+            </div>
+            <div class="hero__feature">
+              <i class="fa fa-heart"></i><span>Freshly Brewed</span>
+            </div>
+            <div class="hero__feature">
+              <i class="fa fa-star"></i><span>Great Taste</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__image">
+          <img src="./images/hero-coffee.jpg" alt="Elite Coffee" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+      <div class="container">
+        <div class="categories__header">
+          <div>
+            <p class="categories__subtitle">OUR CATEGORIES</p>
+            <h2 class="categories__title">Explore Our Coffee Collection</h2>
+            <p class="categories__description">
+              From classic favorites to unique blends, find your perfect cup.
+            </p>
+          </div>
+          <a href="#" class="categories__view-all"
+            >View All<i class="fa fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="categories__grid">
+          <a href="#" class="categories__card">
+            <div class="categories__image">
+              <img src="./images/category-hot-coffee.jpg" alt="Hot Coffee" />
+            </div>
+            <div class="categories__content">
+              <h3 class="categories_name">Hot Coffee</h3>
+              <div class="categories__bottom">
+                <span class="categories__items">8 Items</span>
+                <i class="fa fa-arrow-right categories__arrow"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="categories__card">
+            <div class="categories__image">
+              <img src="./images/category-iced-coffee.jpg" alt="Iced Coffee" />
+            </div>
+            <div class="categories__content">
+              <h3 class="categories_name">Iced Coffee</h3>
+              <div class="categories__bottom">
+                <span class="categories__items">6 Items</span>
+                <i class="fa fa-arrow-right categories__arrow"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="categories__card">
+            <div class="categories__image">
+              <img src="./images/category-frappe.jpg" alt="Frappe" />
+            </div>
+            <div class="categories__content">
+              <h3 class="categories_name">Frappe</h3>
+              <div class="categories__bottom">
+                <span class="categories__items">5 Items</span>
+                <i class="fa fa-arrow-right categories__arrow"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="categories__card">
+            <div class="categories__image">
+              <img src="./images/category-tea.jpg" alt="Tea" />
+            </div>
+            <div class="categories__content">
+              <h3 class="categories_name">Tea</h3>
+              <div class="categories__bottom">
+                <span class="categories__items">4 Items</span>
+                <i class="fa fa-arrow-right categories__arrow"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="categories__card">
+            <div class="categories__image">
+              <img
+                src="./images/category-coffee-beans.jpg"
+                alt="Coffee Beans"
+              />
+            </div>
+            <div class="categories__content">
+              <h3 class="categories_name">Coffee Beans</h3>
+              <div class="categories__bottom">
+                <span class="categories__items">4 Items</span>
+                <i class="fa fa-arrow-right categories__arrow"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products">
+      <div class="container">
+        <div class="products__header">
+          <div>
+            <p class="products__subtitles">FEATURED PRODUCTS</p>
+            <h2 class="products__title">Our Popular Drinks</h2>
+            <p class="products__description">
+              Handpicked favourites, loved by our customers.
+            </p>
+          </div>
+
+          <div class="products__controls">
+            <button class="products__control">
+              <i class="fa fa-angle-left"></i>
+            </button>
+            <button class="products__control">
+              <i class="fa fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="products__grid">
+          <article class="products__card">
+            <div class="products__image">
+              <img src="./images/product-cappuccino.jpg" alt="Cappuccino" />
+              <span class="products__badge">Best Seller</span>
+              <button class="products__favourite">
+                <i class="fa fa-heart-o"></i>
+              </button>
+            </div>
+            <div class="products__content">
+              <h3 class="products__name">Cappuccino</h3>
+              <p class="products__description">
+                Rich espresso with steamed milk and a smooth foam layer.
+              </p>
+              <p class="products__price">₹400</p>
+              <div class="products__rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span class="products__rating-count">(4.8)</span>
+              </div>
+              <button class="products__cart">
+                <i class="fa fa-shopping-cart"></i>Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <article class="products__card">
+            <div class="products__image">
+              <img src="./images/product-iced-latte.jpg" alt="Iced Latte" />
+              <span class="products__badge products__badge--popular"
+                >Popular</span
+              >
+              <button class="products__favourite">
+                <i class="fa fa-heart-o"></i>
+              </button>
+            </div>
+            <div class="products__content">
+              <h3 class="products__name">Iced Latte</h3>
+              <p class="products__description">
+                Chilled espresso with fresh milk and ice.
+              </p>
+              <p class="products__price">₹430</p>
+              <div class="products__rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span class="products__rating-count">(4.6)</span>
+              </div>
+              <button class="products__cart">
+                <i class="fa fa-shopping-cart"></i>Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <article class="products__card">
+            <div class="products__image">
+              <img
+                src="./images/product-caramel-frappe.jpg"
+                alt="Caramel Frappe"
+              />
+              <button class="products__favourite">
+                <i class="fa fa-heart-o"></i>
+              </button>
+            </div>
+            <div class="products__content">
+              <h3 class="products__name">Caramel Frappe</h3>
+              <p class="products__description">
+                A sweet blend of coffee, milk and caramel.
+              </p>
+              <p class="products__price">₹480</p>
+              <div class="products__rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span class="products__rating-count">(4.7)</span>
+              </div>
+              <button class="products__cart">
+                <i class="fa fa-shopping-cart"></i>Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <article class="products__card">
+            <div class="products__image">
+              <img src="./images/product-americano.jpg" alt="Americano" />
+              <button class="products__favourite">
+                <i class="fa fa-heart-o"></i>
+              </button>
+            </div>
+            <div class="products__content">
+              <h3 class="products__name">Americano</h3>
+              <p class="products__description">
+                Bold espresso with hot water. Pure and simple.
+              </p>
+              <p class="products__price">₹290</p>
+              <div class="products__rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span class="products__rating-count">(4.5)</span>
+              </div>
+              <button class="products__cart">
+                <i class="fa fa-shopping-cart"></i>Add to Cart
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Offer -->
+    <section class="special-offer">
+      <div class="container special-offer__container">
+        <div class="special-offer__content">
+          <p class="special-offer__subtitle">SPECIAL OFFER</p>
+          <h2 class="special-offer__title">Get 20% off</h2>
+          <p class="special-offer__description">On Our Premium Coffee Beans</p>
+
+          <div class="special-offer__bottom">
+            <a href="#" class="special-offer__button"
+              >Shop Now<i class="fa fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why choose us -->
+    <section class="why-choose" id="about">
+      <div class="container">
+        <div class="why-choose__header">
+          <p class="why-choose__subtitle">WHY CHOOSE US</p>
+          <h2 class="why-choose__title">More Than Just Coffee</h2>
+        </div>
+
+        <div class="why-choose__grid">
+          <article class="why-choose__card">
+            <div class="why-choose__icon"><i class="fa fa-leaf"></i></div>
+            <h3 class="why-choose__name">Premium Quality</h3>
+            <p class="why-choose__text">
+              Only the finest beans, carefully selected.
+            </p>
+          </article>
+
+          <article class="why-choose__card">
+            <div class="why-choose__icon"><i class="fa fa-truck"></i></div>
+            <h3 class="why-choose__name">Fast Delivery</h3>
+            <p class="why-choose__text">Get your coffee, fresh and on time.</p>
+          </article>
+
+          <article class="why-choose__card">
+            <div class="why-choose__icon"><i class="fa fa-shield"></i></div>
+            <h3 class="why-choose__name">Secure Payment</h3>
+            <p class="why-choose__text">Your payment is always safe with us.</p>
+          </article>
+
+          <article class="why-choose__card">
+            <div class="why-choose__icon"><i class="fa fa-headphones"></i></div>
+            <h3 class="why-choose__name">Customer Support</h3>
+            <p class="why-choose__text">We're here for you 24/7.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="reviews__header">
+          <p class="reviews__subtitle">CUSTOMER REVIEWS</p>
+          <h2 class="reviews__title">What Our Customers Say</h2>
+        </div>
+
+        <div class="reviews__grid">
+          <article class="reviews__card">
+            <div class="reviews__rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="reviews__text">
+              "The coffee is absolutely amazing. The flavor is rich, smooth, and
+              always fresh."
+            </p>
+            <div class="reviews__customer">
+              <div class="reviews__avatar"><i class="fa fa-user"></i></div>
+              <div class="reviews__info">
+                <h3 class="reviews__name">User 1</h3>
+                <p class="reviews__role">Regular Customer</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reviews__card">
+            <div class="reviews__rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="reviews__text">
+              "One of the best coffee places I've visited. The atmosphere and
+              service are excellent."
+            </p>
+            <div class="reviews__customer">
+              <div class="reviews__avatar"><i class="fa fa-user"></i></div>
+              <div class="reviews__info">
+                <h3 class="reviews__name">User 2</h3>
+                <p class="reviews__role">Regular Customer</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reviews__card">
+            <div class="reviews__rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="reviews__text">
+              "I love coming here every morning. Their cappuccino is perfectly
+              prepared every time."
+            </p>
+            <div class="reviews__customer">
+              <div class="reviews__avatar"><i class="fa fa-user"></i></div>
+              <div class="reviews__info">
+                <h3 class="reviews__name">User 3</h3>
+                <p class="reviews__role">Regular Customer</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- News letter -->
+    <section class="newsletter" id="newsletter">
+      <div class="container newsletter__container">
+        <div class="newsletter__icon">
+          <i class="fa fa-envelope-o"></i>
+        </div>
+        <div class="newsletter__content">
+          <p class="newsletter__subtitle">STAY UPDATED</p>
+          <h2 class="newsletter__title">Subscribe to Our Newsletter</h2>
+          <p class="newsletter__description">
+            Get the latest updates, offers and coffee tips straight to your
+            inbox.
+          </p>
+        </div>
+        <form class="newsletter__form">
+          <input
+            type="email"
+            class="newsletter__input"
+            placeholder="Enter your email address"
+          />
+          <button type="submit" class="newsletter__button">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__main">
+          <div class="footer__brand">
+            <img src="images/logo1.png" alt="EliteCoffee"/>
+            <p class="footer__description">
+              Premium coffee, handcrafted with passion. Discover your perfect
+              cup at Elite Coffee.
+            </p>
+            <div class="footer__socials">
+              <a href="#" class="footer__social"
+                ><i class="fa fa-facebook"></i
+              ></a>
+              <a href="#" class="footer__social"
+                ><i class="fa fa-instagram"></i
+              ></a>
+              <a href="#" class="footer__social"
+                ><i class="fa fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Quick Links</h3>
+            <ul class="footer__links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#categories">Menu</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#reviews">Reviews</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title">Opening Hours</h3>
+            <ul class="footer__hours">
+              <li>
+                <span>Monday - Friday</span>
+                <strong>8:00 AM - 10:00 PM</strong>
+              </li>
+
+              <li>
+                <span>Saturday</span>
+                <strong>9:00 AM - 11:00 PM</strong>
+              </li>
+
+              <li>
+                <span>Sunday</span>
+                <strong>9:00 AM - 9:00 PM</strong>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title">Contact Us</h3>
+            <ul class="footer__contact">
+              <li>
+                <i class="fa fa-map-marker"></i><span>Suart, Gujarat</span>
+              </li>
+              <li><i class="fa fa-phone"></i><span>+91 98765 43210</span></li>
+              <li>
+                <i class="fa fa-envelope"></i><span>hello@elitecoffee.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            © 2026 Elite Coffee. All rights reserved.
+          </p>
+          <div class="footer__legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+@use "variables" as vars;
+
+.footer {
+    padding: 2.5rem 0 1rem;
+    background-color: vars.$color-primary-dark;
+    color: vars.$color-white;
+
+    &__main {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1.2fr 1.2fr;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    &__brand {
+        max-width: 280px;
+    }
+
+    &__logo {
+        display: inline-block;
+        margin-bottom: 0.7rem;
+        font-family: vars.$font-heading;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: vars.$color-white;
+    }
+
+    &__description {
+        margin-bottom: 1rem;
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 0.8rem;
+        line-height: 1.6;
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    &__social {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        color: vars.$color-white;
+        transition: background 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            background: vars.$color-primary-light;
+            transform: translateY(-2px);
+        }
+
+        i {
+            font-size: 0.65rem;
+        }
+    }
+
+    &__title {
+        margin-bottom: 0.9rem;
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: vars.$color-white;
+    }
+
+    &__links, &__hours, &__contact {
+        list-style: none;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        li {
+            a {
+                color: rgba(255, 255, 255, 0.65);
+                font-size: 0.75rem;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: vars.$color-primary-light;
+                }
+            }
+        }
+    }
+
+    &__hours {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        
+        li {
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+            span {
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 0.75rem;
+            }
+
+            strong {
+                color: vars.$color-white;
+                font-size: 0.75rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+
+        li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.75rem;
+
+            i {
+                width: 14px;
+                color: vars.$color-primary-light;
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+
+    &__bottom {
+        padding-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    &__copyright {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.75rem;
+    }
+
+    &__legal {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        a {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.75rem;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: vars.$color-white;
+            }
+        }
+    }
+}

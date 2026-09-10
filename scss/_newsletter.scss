@@ -1,0 +1,125 @@
+@use "variables" as vars;
+
+.newsletter {
+    padding: 1.5rem 0;
+    background: vars.$color-background-light;
+
+    &__container {
+        display: flex;
+        background: vars.$color-primary;
+        align-items: center;
+        border-radius: 15px;
+    }
+
+    &__content {
+        max-width: 100%;
+        margin: 0;
+        padding: 0.7rem auto;
+        // border-radius: vars.$radius-md;        
+        // text-align: center;
+        // background: vars.$color-background;
+        // border: 1px solid vars.$color-border;
+    }
+
+    &__icon {
+        width: 92px;
+        height: 92px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: vars.$color-white;
+
+        i {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 1rem;
+        color: vars.$color-white;
+        font-size: 0.6rem;
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+    }
+
+    &__title {
+        // margin-bottom: 0.5rem;
+        font-family: vars.$font-heading;
+        font-size: 1.7rem;
+        line-height: 1.2;
+        color: vars.$color-white;
+    }
+
+    &__description {
+        max-width: 500px;
+        margin: 0 auto 1.2rem;
+        color: vars.$color-white;
+        font-size: 0.75rem;
+        line-height: 1.6;
+    }
+
+    &__form {
+        max-width: 520px;
+        margin: 0 auto;
+        padding: 0.3rem;
+        display: flex;
+        align-items: center;
+        // border: 1px solid vars.$color-border;
+        border-radius: vars.$color-white;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+        &:focus-within {
+            border-color: vars.$color-primary;
+            box-shadow: 0 0 0 3px rgba(111, 78, 55, 0.1);
+        }
+    }
+
+    &__input {
+        flex: 1;
+        min-width: 400px;
+        padding: 0.7rem 1rem;
+        border: none;
+        background: vars.$color-white;
+        border-radius: 20px;
+        color: vars.$color-black;
+        font-size: 0.7rem;
+        outline: none;
+
+        &::placeholder {
+            color: vars.$color-text-light;
+        }
+    }
+
+    &__button {
+        flex-shrink: 0;
+        padding: 0.65rem 1.1rem;
+        // display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        border-radius: 50px;
+        background: vars.$color-primary-light;
+        color: vars.$color-white;
+        font-size: 0.6rem;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            background: vars.$color-primary-dark;
+            transform: translateY(-2px);
+        }
+
+        i {
+            font-size: 0.55rem;
+        }
+    }
+
+    &__note {
+        margin-top: 0.7rem;
+        color: vars.$color-text-light;
+        font-size: 0.55rem;
+    }
+}
+
