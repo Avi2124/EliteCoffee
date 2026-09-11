@@ -1,23 +1,21 @@
 @use "variables" as vars;
 
 .hero {
-  background-image: url(/images/hero-coffee.png);
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
+  background: vars.$color-background;
+  overflow: hidden;
 
   &__container {
-    min-height: 342px;
+    min-height: 285px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     width: min(100%, 1595px);
     margin-inline: auto;
   }
 
   &__content {
-    width: 50%;
-    padding: 2rem 10rem;
+    width: 42%;
+    padding: 2.5rem 2rem 2rem 11rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,7 +42,7 @@
   }
 
   &__description {
-    max-width: 433px;
+    max-width: 480px;
     margin-bottom: 1.2rem;
     color: vars.$color-text-light;
     font-size: 0.8rem;
@@ -107,6 +105,16 @@
     &__content {
         width: 50%;
         padding: 2rem 2rem 2rem 3rem;
+    }
+
+    &__image {
+        width: 50%;
+        background-size: cover;
+        background-position: center;
+
+        img {
+            object-position: center;
+        }
     }
 
     &__subtitle {
