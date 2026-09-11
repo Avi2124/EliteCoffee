@@ -266,20 +266,22 @@ h1 {
 }
 
 .hero {
-  background: #f8f4ee;
-  overflow: hidden;
+  background-image: url(/images/hero-coffee.png);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 .hero__container {
-  min-height: 285px;
+  min-height: 342px;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
   width: min(100%, 1595px);
   margin-inline: auto;
 }
 .hero__content {
-  width: 42%;
-  padding: 2.5rem 2rem 2rem 11rem;
+  width: 50%;
+  padding: 2rem 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -302,7 +304,7 @@ h1 {
   color: #6f4e37;
 }
 .hero__description {
-  max-width: 480px;
+  max-width: 433px;
   margin-bottom: 1.2rem;
   color: #817870;
   font-size: 0.8rem;
@@ -359,14 +361,6 @@ h1 {
   .hero__content {
     width: 50%;
     padding: 2rem 2rem 2rem 3rem;
-  }
-  .hero__image {
-    width: 50%;
-    background-size: cover;
-    background-position: center;
-  }
-  .hero__image img {
-    object-position: center;
   }
   .hero__subtitle {
     font-size: 0.55rem;
