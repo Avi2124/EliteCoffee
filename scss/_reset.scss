@@ -46,3 +46,28 @@ button {
 h1 {
     color: vars.$color-primary;
 }
+
+// Tablet
+@media (max-width: 1000px) {
+    .container {
+        width: 92%;
+        overflow: hidden;
+    }
+}
+
+// Mobile
+@media (max-width: 600px) {
+    .container {
+        width: 94%;
+        overflow: hidden;
+    }
+}
+
+// Mobile
+@media (max-width: 400px) {
+    .container {
+        width: 95%;
+        overflow: hidden;
+    }
+}
+
