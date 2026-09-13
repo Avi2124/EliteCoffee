@@ -1,0 +1,279 @@
+@use "variables" as vars;
+
+.navbar {
+  background: vars.$color-background-light;
+  border-bottom: 1px solid vars.$color-border;
+
+  &__toggle {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50%;
+    background: vars.$color-background;
+    color: vars.$color-primary;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+
+    transition: background 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+    background: vars.$color-border;
+    }
+  }
+
+  &__container {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 150px;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 0.9rem;
+    color: vars.$color-text;
+    transition: color 0.3s ease;
+    font-weight: 700;
+
+    &.active {
+      color: vars.$color-primary;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 100%;
+        height: 2px;
+        background: vars.$color-primary;
+      }
+    }
+
+    &:hover {
+      color: vars.$color-primary;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  &__search,
+  &__cart {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: vars.$color-background;
+    color: vars.$color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:
+      background 0.3s ease,
+      transform 0.3s ease;
+
+    &:hover {
+      background: vars.$color-border;
+      transform: translateY(-2px);
+    }
+  }
+
+  &__cart {
+    position: relative;
+
+    span {
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: vars.$color-primary;
+      color: vars.$color-white;
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    padding: 0.5rem 1.8rem;
+    border-radius: 50px;
+    background: vars.$color-primary;
+    color: vars.$color-white;
+    transition:
+      background 0.3s ease,
+      transform 0.3s ease;
+    font-size: 14px;
+    font-weight: 700;
+
+    &:hover {
+      background: vars.$color-primary-dark;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// Tablet
+@media (max-width: 1000px) {
+  .navbar {
+    &__menu {
+      gap: 1.3rem;
+    }
+
+    &__logo {
+      width: 135px;
+    }
+
+    &__link {
+      font-size: 0.85rem;
+    }
+    &__button {
+      padding: 0.65rem 1.2rem;
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 600px) {
+  .navbar {
+    position: relative;
+
+    &__container {
+      min-height: 64px;
+      position: relative;
+    }
+
+    &__logo {
+      width: 125px;
+    }
+
+    &__toggle {
+      display: flex;
+    }
+
+    &__menu {
+      position: absolute;
+      top: calc(100% + 1px);
+      left: 0;
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      padding: 0.75rem;
+      background: vars.$color-background-light;
+      border-top: 1px solid vars.$color-border;
+      border-bottom: 1px solid vars.$color-border;
+      z-index: 1000;
+
+      &.active {
+        display: flex;
+      }
+    }
+
+    &__link {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+
+      &:active::after {
+        display: none;
+      }
+
+      &:hover {
+        background: vars.$color-background;
+      }
+    }
+
+    &__actions {
+      gap: 0.5rem;
+    }
+
+    &__search,
+    &__cart, &__toggle {
+      width: 38px;
+      height: 38px;
+    }
+
+    &__button {
+      padding: 0.6rem 1rem;
+      font-size: 0.75rem;
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 400px) {
+  .navbar {
+    &__container {
+      min-height: 60px;
+    }
+
+    &__logo {
+      width: 108px;
+    }
+
+    &__search {
+      display: none;
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__actions {
+      gap: 0.4rem;
+    }
+
+    &__toggle, &__cart {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}
+
+/* Responsive fixes for navbar */
+@media (max-width: 600px) {
+    .navbar__menu {
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .navbar__link.active::after {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar__logo {
+        width: 100px;
+    }
+
+    .navbar__cart,
+    .navbar__toggle {
+        width: 34px;
+        height: 34px;
+    }
+}

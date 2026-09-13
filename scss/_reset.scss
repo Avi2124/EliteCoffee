@@ -1,0 +1,80 @@
+@use "variables" as vars;
+// @use "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    // font-family: variables.$font-body;
+    font-family: vars.$font-body;
+    color: vars.$color-text;
+    background: vars.$color-background-light;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button, input {
+    font: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    width: min(90%, vars.$container-width);
+    margin-inline: auto;
+}
+
+h1 {
+    color: vars.$color-primary;
+}
+
+// Tablet
+@media (max-width: 1000px) {
+    .container {
+        width: 92%;
+        overflow: hidden;
+    }
+}
+
+// Mobile
+@media (max-width: 600px) {
+    .container {
+        width: 94%;
+        overflow: hidden;
+    }
+}
+
+// Mobile
+@media (max-width: 400px) {
+    .container {
+        width: 95%;
+        overflow: hidden;
+    }
+}
+
+
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}

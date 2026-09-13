@@ -1,0 +1,187 @@
+@use "variables" as vars;
+
+.newsletter {
+    padding: 1.5rem 0;
+    background: vars.$color-background-light;
+
+    &__container {
+        display: flex;
+        background: vars.$color-primary;
+        align-items: center;
+        border-radius: 15px;
+    }
+
+    &__content {
+        max-width: 100%;
+        margin: 0;
+        padding: 0.7rem auto;
+    }
+
+    &__icon {
+        width: 92px;
+        height: 92px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: vars.$color-white;
+
+        i {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 1rem;
+        color: vars.$color-white;
+        font-size: 0.6rem;
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+    }
+
+    &__title {
+        font-family: vars.$font-heading;
+        font-size: 1.7rem;
+        line-height: 1.2;
+        color: vars.$color-white;
+    }
+
+    &__description {
+        max-width: 500px;
+        margin: 0 auto 1.2rem;
+        color: vars.$color-white;
+        font-size: 0.75rem;
+        line-height: 1.6;
+    }
+
+    &__form {
+        max-width: 520px;
+        margin: 0 auto;
+        padding: 0.3rem;
+        display: flex;
+        align-items: center;
+        border-radius: vars.$color-white;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+        &:focus-within {
+            border-color: vars.$color-primary;
+            box-shadow: 0 0 0 3px rgba(111, 78, 55, 0.1);
+        }
+    }
+
+    &__input {
+        flex: 1;
+        min-width: 400px;
+        padding: 0.7rem 1rem;
+        border: none;
+        background: vars.$color-white;
+        border-radius: 20px;
+        color: vars.$color-black;
+        font-size: 0.7rem;
+        outline: none;
+
+        &::placeholder {
+            color: vars.$color-text-light;
+        }
+    }
+
+    &__button {
+        flex-shrink: 0;
+        padding: 0.61rem 2.3rem;
+        align-items: center;
+        gap: 0.4rem;
+        border-radius: 50px;
+        background: vars.$color-primary-light;
+        color: vars.$color-white;
+        font-size: 0.8rem;
+        margin-left: -133px;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            background: vars.$color-primary-dark;
+        }
+
+        i {
+            font-size: 0.55rem;
+        }
+    }
+
+    &__note {
+        margin-top: 0.7rem;
+        color: vars.$color-text-light;
+        font-size: 0.55rem;
+    }
+}
+
+/* Responsive fixes for newsletter */
+@media (max-width: 1000px) {
+    .newsletter__container {
+        padding: 1.5rem;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .newsletter__form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .newsletter__input {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .newsletter__button {
+        margin-left: -125px;
+    }
+}
+
+@media (max-width: 600px) {
+    .newsletter {
+        padding: 2.5rem 0;
+    }
+
+    .newsletter__title {
+        font-size: 1.45rem;
+    }
+
+    .newsletter__container {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .newsletter__icon {
+        width: 64px;
+        height: 64px;
+        margin: 0 auto;
+    }
+
+    .newsletter__form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        padding: 0;
+    }
+
+    .newsletter__input {
+        min-width: 0;
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .newsletter__button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .newsletter__title {
+        font-size: 1.35rem;
+    }
+}
