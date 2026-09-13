@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "sass scss/style.scss css/style.css"
+  },
   "dependencies": {
     "sass": "^1.104.1"
   }
