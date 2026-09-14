@@ -161,13 +161,14 @@
     }
 }
 
-/* Responsive fixes for footer */
+/* Tablet */
 @media (max-width: 1000px) {
     .footer__main {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
+// Mobile
 @media (max-width: 600px) {
     .footer__main {
         grid-template-columns: 1fr;
@@ -185,6 +186,7 @@
     }
 }
 
+// Mobile
 @media (max-width: 400px) {
     .footer__legal {
         flex-direction: column;

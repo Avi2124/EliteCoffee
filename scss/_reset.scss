@@ -19,6 +19,12 @@ body {
     line-height: 1.6;
 }
 
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 img {
     width: 100%;
     display: block;
@@ -51,7 +57,6 @@ h1 {
 @media (max-width: 1000px) {
     .container {
         width: 92%;
-        overflow: hidden;
     }
 }
 
@@ -59,7 +64,6 @@ h1 {
 @media (max-width: 600px) {
     .container {
         width: 94%;
-        overflow: hidden;
     }
 }
 
@@ -67,14 +71,5 @@ h1 {
 @media (max-width: 400px) {
     .container {
         width: 95%;
-        overflow: hidden;
     }
-}
-
-
-
-html,
-body {
-    max-width: 100%;
-    overflow-x: hidden;
 }

@@ -88,13 +88,14 @@
     }
 }
 
-/* Responsive fixes for why choose */
+/* Tablet */
 @media (max-width: 1000px) {
     .why-choose__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
+// Mobile
 @media (max-width: 600px) {
     .why-choose {
         padding: 2.5rem 0;

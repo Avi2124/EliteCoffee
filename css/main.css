@@ -15,6 +15,12 @@ body {
   line-height: 1.6;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 img {
   width: 100%;
   display: block;
@@ -46,27 +52,18 @@ h1 {
 @media (max-width: 1000px) {
   .container {
     width: 92%;
-    overflow: hidden;
   }
 }
 @media (max-width: 600px) {
   .container {
     width: 94%;
-    overflow: hidden;
   }
 }
 @media (max-width: 400px) {
   .container {
     width: 95%;
-    overflow: hidden;
   }
 }
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 .navbar {
   background: #fffdf9;
   border-bottom: 1px solid #e7ddd3;
@@ -221,6 +218,7 @@ body {
     border-top: 1px solid #e7ddd3;
     border-bottom: 1px solid #e7ddd3;
     z-index: 1000;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
   }
   .navbar__menu.active {
     display: flex;
@@ -231,11 +229,11 @@ body {
     border-radius: 8px;
     font-size: 0.9rem;
   }
-  .navbar__link:active::after {
-    display: none;
-  }
   .navbar__link:hover {
     background: #f8f4ee;
+  }
+  .navbar__link.active::after {
+    display: none;
   }
   .navbar__actions {
     gap: 0.5rem;
@@ -254,7 +252,7 @@ body {
     min-height: 60px;
   }
   .navbar__logo {
-    width: 108px;
+    width: 100px;
   }
   .navbar__search {
     display: none;
@@ -266,25 +264,6 @@ body {
     gap: 0.4rem;
   }
   .navbar__toggle, .navbar__cart {
-    width: 36px;
-    height: 36px;
-  }
-}
-/* Responsive fixes for navbar */
-@media (max-width: 600px) {
-  .navbar__menu {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-  }
-  .navbar__link.active::after {
-    display: none;
-  }
-}
-@media (max-width: 400px) {
-  .navbar__logo {
-    width: 100px;
-  }
-  .navbar__cart,
-  .navbar__toggle {
     width: 34px;
     height: 34px;
   }
@@ -631,7 +610,7 @@ body {
   }
 }
 
-/* Responsive fixes for categories */
+/* Tablet */
 @media (max-width: 1000px) {
   .categories__grid {
     grid-template-columns: repeat(3, 1fr);
@@ -848,7 +827,7 @@ body {
   font-size: 0.6rem;
 }
 
-/* Responsive fixes for products */
+/* Tablet */
 @media (max-width: 1000px) {
   .products__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -963,7 +942,7 @@ body {
   font-size: 0.6rem;
 }
 
-/* Responsive fixes for special offer */
+/* Mobile */
 @media (max-width: 600px) {
   .special-offer {
     padding: 2.5rem 0;
@@ -1066,7 +1045,7 @@ body {
   line-height: 1.5;
 }
 
-/* Responsive fixes for why choose */
+/* Tablet */
 @media (max-width: 1000px) {
   .why-choose__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1175,7 +1154,7 @@ body {
   font-size: 0.65rem;
 }
 
-/* Responsive fixes for reviews */
+/* Tablet */
 @media (max-width: 1000px) {
   .reviews__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1293,7 +1272,7 @@ body {
   font-size: 0.55rem;
 }
 
-/* Responsive fixes for newsletter */
+/* Tablet */
 @media (max-width: 1000px) {
   .newsletter__container {
     padding: 1.5rem;
@@ -1486,7 +1465,7 @@ body {
   color: #ffffff;
 }
 
-/* Responsive fixes for footer */
+/* Tablet */
 @media (max-width: 1000px) {
   .footer__main {
     grid-template-columns: repeat(2, 1fr);

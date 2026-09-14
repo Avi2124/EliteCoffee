@@ -157,13 +157,14 @@
     }
 }
 
-/* Responsive fixes for categories */
+/* Tablet */
 @media (max-width: 1000px) {
     .categories__grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
+// Mobile
 @media (max-width: 600px) {
     .categories {
         padding: 2.5rem 0;
@@ -191,6 +192,7 @@
     }
 }
 
+// Mobile
 @media (max-width: 400px) {
     .categories__image {
         height: 185px;

@@ -116,7 +116,7 @@
     }
 }
 
-/* Responsive fixes for newsletter */
+/* Tablet */
 @media (max-width: 1000px) {
     .newsletter__container {
         padding: 1.5rem;
@@ -139,6 +139,7 @@
     }
 }
 
+// Mobile
 @media (max-width: 600px) {
     .newsletter {
         padding: 2.5rem 0;
@@ -180,6 +181,7 @@
     }
 }
 
+// Mobile
 @media (max-width: 400px) {
     .newsletter__title {
         font-size: 1.35rem;

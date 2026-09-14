@@ -89,7 +89,7 @@
     }
 }
 
-/* Responsive fixes for special offer */
+/* Mobile */
 @media (max-width: 600px) {
     .special-offer {
         padding: 2.5rem 0;
@@ -112,6 +112,7 @@
     }
 }
 
+// Mobile
 @media (max-width: 400px) {
     .special-offer__content {
         padding: 1.5rem;
