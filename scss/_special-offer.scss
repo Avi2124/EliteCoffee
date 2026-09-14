@@ -1,7 +1,6 @@
 @use "variables" as vars;
 
 .special-offer {
-    padding: 1.2rem 0;
     background: vars.$color-background-light;
 
     &__container {
@@ -91,9 +90,6 @@
 
 /* Mobile */
 @media (max-width: 600px) {
-    .special-offer {
-        padding: 2.5rem 0;
-    }
 
     .special-offer__title {
         font-size: 1.45rem;
