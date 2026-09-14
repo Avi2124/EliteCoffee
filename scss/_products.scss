@@ -213,7 +213,7 @@
 /* Tablet */
 @media (max-width: 1000px) {
     .products__grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .products__description {
@@ -234,7 +234,7 @@
     }
 
     .products__grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .products__controls {
@@ -242,16 +242,17 @@
     }
 
     .products__image {
-        height: 13rem;
+        height: auto;
     }
+
+    .products__image img {
+        height: auto;
+    }
+
 }
 
 // mobile
 @media (max-width: 400px) {
-    .products__image {
-        height: 185px;
-    }
-
     .products__content {
         padding: 0.8rem;
     }
